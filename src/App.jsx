@@ -1,17 +1,8 @@
-import './App.css'
+import { RouterProvider } from "react-router-dom";
+import { routes } from "./routes/routes";
+import ReactGA from "react-ga4";
 
-function App() {
-
-  return (
-    <>
-     <h1>Anders And</h1>
-     <br />
-     <p>Bah</p>
-     <br />
-     <h3>Google is dumb af</h3>
-  
-    </>
-  )
+export function App() {
+  /*  ReactGA.initialize(""); */
+  return <RouterProvider router={routes} />;
 }
-
-export default App
